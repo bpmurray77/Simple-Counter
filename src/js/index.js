@@ -10,3 +10,12 @@ import Home from "./component/home.jsx";
 
 //render your react application
 ReactDOM.render(<Home />, document.querySelector("#app"));
+
+var sec = 0;
+
+setInterval(()=>{
+    sec++;
+    document.open(".timer");
+    document.write(sec);}, 1000)
+
+
